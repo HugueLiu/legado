@@ -16,7 +16,7 @@
         app:titleTextAppearance="@style/ToolbarTitle"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.legado.app.lib.theme.view.ThemeEditText
+    <io.legado.read.lib.theme.view.ThemeEditText
         android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tool_bar"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <io.legado.app.ui.widget.anima.RotateLoading
+    <io.legado.read.ui.widget.anima.RotateLoading
         android:id="@+id/rl_loading"
         android:layout_width="60dp"
         android:layout_height="60dp"

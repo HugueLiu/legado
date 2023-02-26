@@ -18,7 +18,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".App"
+        android:name="io.legado.read.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,7 +29,7 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
         <!-- 主入口 -->
         <activity
-            android:name=".ui.welcome.WelcomeActivity"
+            android:name="io.legado.read.ui.welcome.WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
         </activity>
         <!-- 图标1 -->
         <activity
-            android:name=".ui.welcome.Launcher1"
+            android:name="io.legado.read.ui.welcome.Launcher1"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher1">
@@ -51,7 +51,7 @@
         </activity>
         <!-- 图标2 -->
         <activity
-            android:name=".ui.welcome.Launcher2"
+            android:name="io.legado.read.ui.welcome.Launcher2"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher2">
@@ -63,7 +63,7 @@
         </activity>
         <!-- 图标3 -->
         <activity
-            android:name=".ui.welcome.Launcher3"
+            android:name="io.legado.read.ui.welcome.Launcher3"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher3">
@@ -75,7 +75,7 @@
         </activity>
         <!-- 图标4 -->
         <activity
-            android:name=".ui.welcome.Launcher4"
+            android:name="io.legado.read.ui.welcome.Launcher4"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher4">
@@ -87,7 +87,7 @@
         </activity>
         <!-- 图标5 -->
         <activity
-            android:name=".ui.welcome.Launcher5"
+            android:name="io.legado.read.ui.welcome.Launcher5"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher5">
@@ -99,7 +99,7 @@
         </activity>
         <!-- 图标6 -->
         <activity
-            android:name=".ui.welcome.Launcher6"
+            android:name="io.legado.read.ui.welcome.Launcher6"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/launcher6">
@@ -111,14 +111,14 @@
         </activity>
         <!-- 主界面 -->
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="io.legado.read.ui.main.MainActivity"
             android:alwaysRetainTaskState="true"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout|uiMode"
             android:exported="true"
             android:launchMode="singleTask" />
         <!-- 阅读界面 -->
         <activity
-            android:name=".ui.book.read.ReadBookActivity"
+            android:name="io.legado.read.ui.book.read.ReadBookActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:exported="true"
             android:launchMode="singleTask">
@@ -132,172 +132,172 @@
         </activity>
         <!-- 书籍详情页 -->
         <activity
-            android:name=".ui.book.info.BookInfoActivity"
+            android:name="io.legado.read.ui.book.info.BookInfoActivity"
             android:launchMode="singleTop" />
         <!-- 书籍信息编辑 -->
         <activity
-            android:name=".ui.book.info.edit.BookInfoEditActivity"
+            android:name="io.legado.read.ui.book.info.edit.BookInfoEditActivity"
             android:launchMode="singleTask" />
         <!-- 音频播放界面 -->
         <activity
-            android:name="io.legado.app.ui.book.audio.AudioPlayActivity"
+            android:name="io.legado.read.ui.book.audio.AudioPlayActivity"
             android:launchMode="singleTask" />
         <!-- 授权界面 -->
         <activity
-            android:name="io.legado.app.lib.permission.PermissionActivity"
+            android:name="io.legado.read.lib.permission.PermissionActivity"
             android:theme="@style/Activity.Permission" />
         <!-- 二维码扫描 -->
         <activity
-            android:name=".ui.qrcode.QrCodeActivity"
+            android:name="io.legado.read.ui.qrcode.QrCodeActivity"
             android:launchMode="singleTask" />
         <!-- 规则订阅 -->
         <activity
-            android:name=".ui.rss.subscription.RuleSubActivity"
+            android:name="io.legado.read.ui.rss.subscription.RuleSubActivity"
             android:launchMode="singleTask" />
         <!-- 书源编辑 -->
         <activity
-            android:name=".ui.book.source.edit.BookSourceEditActivity"
+            android:name="io.legado.read.ui.book.source.edit.BookSourceEditActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- 订阅源编辑 -->
         <activity
-            android:name=".ui.rss.source.edit.RssSourceEditActivity"
+            android:name="io.legado.read.ui.rss.source.edit.RssSourceEditActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- 书源编辑 -->
         <activity
-            android:name=".ui.replace.edit.ReplaceEditActivity"
+            android:name="io.legado.read.ui.replace.edit.ReplaceEditActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <!-- 配置界面 -->
         <activity
-            android:name=".ui.config.ConfigActivity"
+            android:name="io.legado.read.ui.config.ConfigActivity"
             android:launchMode="singleTask" />
         <!-- 搜索界面 -->
         <activity
-            android:name=".ui.book.search.SearchActivity"
+            android:name="io.legado.read.ui.book.search.SearchActivity"
             android:launchMode="standard" />
         <!-- 关于界面 -->
         <activity
-            android:name=".ui.about.AboutActivity"
+            android:name="io.legado.read.ui.about.AboutActivity"
             android:launchMode="singleTask"
             android:screenOrientation="behind" />
         <!-- 捐赠界面 -->
         <activity
-            android:name=".ui.about.DonateActivity"
+            android:name="io.legado.read.ui.about.DonateActivity"
             android:launchMode="singleTask"
             android:screenOrientation="behind" />
         <!-- 书源管理 -->
         <activity
-            android:name=".ui.book.source.manage.BookSourceActivity"
+            android:name="io.legado.read.ui.book.source.manage.BookSourceActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 订阅源管理 -->
         <activity
-            android:name=".ui.rss.source.manage.RssSourceActivity"
+            android:name="io.legado.read.ui.rss.source.manage.RssSourceActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- txt目录规则管理 -->
         <activity
-            android:name=".ui.book.toc.rule.TxtTocRuleActivity"
+            android:name="io.legado.read.ui.book.toc.rule.TxtTocRuleActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 替换规则界面 -->
         <activity
-            android:name=".ui.replace.ReplaceRuleActivity"
+            android:name="io.legado.read.ui.replace.ReplaceRuleActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 书籍管理 -->
         <activity
-            android:name=".ui.book.manage.BookshelfManageActivity"
+            android:name="io.legado.read.ui.book.manage.BookshelfManageActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 书源调试 -->
         <activity
-            android:name=".ui.book.source.debug.BookSourceDebugActivity"
+            android:name="io.legado.read.ui.book.source.debug.BookSourceDebugActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 目录 -->
         <activity
-            android:name=".ui.book.toc.TocActivity"
+            android:name="io.legado.read.ui.book.toc.TocActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- 正文搜索 -->
         <activity
-            android:name=".ui.book.searchContent.SearchContentActivity"
+            android:name="io.legado.read.ui.book.searchContent.SearchContentActivity"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <!-- RSS条目 -->
         <activity
-            android:name=".ui.rss.article.RssSortActivity"
+            android:name="io.legado.read.ui.rss.article.RssSortActivity"
             android:launchMode="singleTop" />
         <!-- RSS阅读 -->
         <activity
-            android:name=".ui.rss.read.ReadRssActivity"
+            android:name="io.legado.read.ui.rss.read.ReadRssActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop" />
         <!-- 导入书籍 -->
         <activity
-            android:name=".ui.book.import.local.ImportBookActivity"
+            android:name="io.legado.read.ui.book.import.local.ImportBookActivity"
             android:launchMode="singleTop" />
         <!-- 添加远程 -->
         <activity
-            android:name=".ui.book.import.remote.RemoteBookActivity"
+            android:name="io.legado.read.ui.book.import.remote.RemoteBookActivity"
             android:launchMode="singleTop" />
         <!-- 发现界面 -->
         <activity
-            android:name=".ui.book.explore.ExploreShowActivity"
+            android:name="io.legado.read.ui.book.explore.ExploreShowActivity"
             android:launchMode="singleTop" />
         <!-- 订阅源调试 -->
         <activity
-            android:name=".ui.rss.source.debug.RssSourceDebugActivity"
+            android:name="io.legado.read.ui.rss.source.debug.RssSourceDebugActivity"
             android:launchMode="singleTop" />
         <!-- Rss收藏 -->
         <activity
-            android:name=".ui.rss.favorites.RssFavoritesActivity"
+            android:name="io.legado.read.ui.rss.favorites.RssFavoritesActivity"
             android:launchMode="singleTop" />
         <!-- 书签 -->
         <activity
-            android:name=".ui.book.bookmark.AllBookmarkActivity"
+            android:name="io.legado.read.ui.book.bookmark.AllBookmarkActivity"
             android:launchMode="singleTop" />
         <!-- 缓存界面 -->
         <activity
-            android:name=".ui.book.cache.CacheActivity"
+            android:name="io.legado.read.ui.book.cache.CacheActivity"
             android:launchMode="singleTop" />
         <!-- WebView界面 -->
         <activity
-            android:name=".ui.browser.WebViewActivity"
+            android:name="io.legado.read.ui.browser.WebViewActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:launchMode="standard" />
         <!-- 书源登录 -->
         <activity
-            android:name="io.legado.app.ui.login.SourceLoginActivity"
+            android:name="io.legado.read.ui.login.SourceLoginActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true"
             android:theme="@style/AppTheme.Transparent" />
         <!-- 阅读记录 -->
         <activity
-            android:name=".ui.about.ReadRecordActivity"
+            android:name="io.legado.read.ui.about.ReadRecordActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true" />
         <!-- 字典管理 -->
         <activity
-            android:name=".ui.dict.rule.DictRuleActivity"
+            android:name="io.legado.read.ui.dict.rule.DictRuleActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true" />
         <!-- 选择文件 -->
         <activity
-            android:name=".ui.document.HandleFileActivity"
+            android:name="io.legado.read.ui.document.HandleFileActivity"
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true"
             android:theme="@style/AppTheme.Transparent" />
         <!-- 文字处理 -->
         <activity
-            android:name=".receiver.SharedReceiverActivity"
+            android:name="io.legado.read.receiver.SharedReceiverActivity"
             android:exported="true"
             android:label="@string/receiving_shared_label"
             android:theme="@style/AppTheme.Transparent">
@@ -318,7 +318,7 @@
         </activity>
         <!-- 一键导入 -->
         <activity
-            android:name=".ui.association.OnLineImportActivity"
+            android:name="io.legado.read.ui.association.OnLineImportActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:exported="true"
             android:theme="@style/AppTheme.Transparent">
@@ -334,13 +334,13 @@
         </activity>
         <!-- 验证码输入 -->
         <activity
-            android:name=".ui.association.VerificationCodeActivity"
+            android:name="io.legado.read.ui.association.VerificationCodeActivity"
             android:configChanges="locale|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
             android:exported="true"
             android:theme="@style/AppTheme.Transparent" />
         <!-- 打开文件 -->
         <activity
-            android:name=".ui.association.FileAssociationActivity"
+            android:name="io.legado.read.ui.association.FileAssociationActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.Transparent">
@@ -389,11 +389,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.CheckSourceService" />
-        <service android:name=".service.CacheBookService" />
-        <service android:name=".service.WebService" />
+        <service android:name="io.legado.read.service.CheckSourceService" />
+        <service android:name="io.legado.read.service.CacheBookService" />
+        <service android:name="io.legado.read.service.WebService" />
         <service
-            android:name=".service.WebTileService"
+            android:name="io.legado.read.service.WebTileService"
             android:exported="true"
             android:icon="@drawable/ic_web_service_noti"
             android:label="legado Web Service"
@@ -402,13 +402,13 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
-        <service android:name=".service.TTSReadAloudService" />
-        <service android:name=".service.HttpReadAloudService" />
-        <service android:name=".service.AudioPlayService" />
-        <service android:name=".service.DownloadService" />
+        <service android:name="io.legado.read.service.TTSReadAloudService" />
+        <service android:name="io.legado.read.service.HttpReadAloudService" />
+        <service android:name="io.legado.read.service.AudioPlayService" />
+        <service android:name="io.legado.read.service.DownloadService" />
 
         <receiver
-            android:name=".receiver.MediaButtonReceiver"
+            android:name="io.legado.read.receiver.MediaButtonReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
@@ -416,7 +416,7 @@
         </receiver>
 
         <provider
-            android:name=".api.ReaderProvider"
+            android:name="io.legado.read.api.ReaderProvider"
             android:authorities="${applicationId}.readerProvider"
             android:enabled="true"
             android:exported="true"

@@ -241,7 +241,7 @@
 # -keep class com.google.android.exoplayer2.** {*;}
 
 ## 对外提供api
--keep class io.legado.app.api.ReturnData{*;}
+-keep class io.legado.read.api.ReturnData{*;}
 
 
 #-------------------Cronet------------------------------------
@@ -389,7 +389,7 @@
 #-------------------Cronet------------------------------------
 
 # Class.forName调用
--keep class io.legado.app.lib.cronet.CronetInterceptor{*;}
--keep class io.legado.app.lib.cronet.CronetLoader{*;}
--keep class io.legado.app.help.AppUpdateGitHub{*;}
+-keep class io.legado.read.lib.cronet.CronetInterceptor{*;}
+-keep class io.legado.read.lib.cronet.CronetLoader{*;}
+-keep class io.legado.read.help.AppUpdateGitHub{*;}
 

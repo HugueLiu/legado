@@ -31,7 +31,7 @@
 
     </LinearLayout>
 
-    <io.legado.app.lib.theme.view.ThemeSwitch
+    <io.legado.read.lib.theme.view.ThemeSwitch
         android:id="@+id/sw_show_unread"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ll_group_style"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <io.legado.app.lib.theme.view.ThemeSwitch
+    <io.legado.read.lib.theme.view.ThemeSwitch
         android:id="@+id/sw_show_last_update_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sw_show_last_update_time"
         app:layout_constraintLeft_toLeftOf="parent">
 
-        <io.legado.app.ui.widget.text.AccentTextView
+        <io.legado.read.ui.widget.text.AccentTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="6dp"
@@ -113,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@id/sw_show_last_update_time"
         app:layout_constraintRight_toRightOf="parent">
 
-        <io.legado.app.ui.widget.text.AccentTextView
+        <io.legado.read.ui.widget.text.AccentTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="6dp"

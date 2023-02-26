@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <io.legado.app.ui.widget.image.CoverImageView
+    <io.legado.read.ui.widget.image.CoverImageView
         android:id="@+id/iv_cover"
         android:layout_width="80dp"
         android:layout_height="110dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UnusedAttribute" />
 
-    <io.legado.app.ui.widget.image.CircleImageView
+    <io.legado.read.ui.widget.image.CircleImageView
         android:id="@+id/iv_in_bookshelf"
         android:layout_width="8dp"
         android:layout_height="8dp"
@@ -30,7 +30,7 @@
         app:layout_constraintLeft_toRightOf="@id/iv_cover"
         app:layout_constraintTop_toTopOf="@id/tv_name" />
 
-    <io.legado.app.ui.widget.text.BadgeView
+    <io.legado.read.ui.widget.text.BadgeView
         android:id="@+id/bv_originCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:textColor="@color/primaryText"
             android:textSize="12sp" />
 
-        <io.legado.app.ui.widget.LabelsBar
+        <io.legado.read.ui.widget.LabelsBar
             android:id="@+id/ll_kind"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
             android:textColor="@color/primaryText"
             android:textSize="12sp" />
 
-        <io.legado.app.ui.widget.text.MultilineTextView
+        <io.legado.read.ui.widget.text.MultilineTextView
             android:id="@+id/tv_introduce"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

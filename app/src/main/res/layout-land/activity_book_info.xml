@@ -21,7 +21,7 @@
         android:layout_height="match_parent"
         android:background="#50000000" />
 
-    <io.legado.app.ui.widget.TitleBar
+    <io.legado.read.ui.widget.TitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp">
 
-                <io.legado.app.ui.widget.image.ArcView
+                <io.legado.read.ui.widget.image.ArcView
                     android:id="@+id/arc_view"
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
@@ -67,7 +67,7 @@
                     app:cardCornerRadius="5dp"
                     app:cardElevation="8dp">
 
-                    <io.legado.app.ui.widget.image.CoverImageView
+                    <io.legado.read.ui.widget.image.CoverImageView
                         android:id="@+id/iv_cover"
                         android:layout_width="130dp"
                         android:layout_height="200dp"
@@ -105,7 +105,7 @@
                     android:textSize="18sp"
                     tools:ignore="RtlHardcoded" />
 
-                <io.legado.app.ui.widget.LabelsBar
+                <io.legado.read.ui.widget.LabelsBar
                     android:id="@+id/lb_kind"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -222,7 +222,7 @@
                                 tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry,TextContrastCheck"
                                 tools:text="@string/origin_format" />
 
-                            <io.legado.app.ui.widget.text.AccentBgTextView
+                            <io.legado.read.ui.widget.text.AccentBgTextView
                                 android:id="@+id/tv_change_source"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -301,7 +301,7 @@
                                 tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry,TextContrastCheck"
                                 tools:text="@string/group_s" />
 
-                            <io.legado.app.ui.widget.text.AccentBgTextView
+                            <io.legado.read.ui.widget.text.AccentBgTextView
                                 android:id="@+id/tv_change_group"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -345,7 +345,7 @@
                                 tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry,TextContrastCheck"
                                 tools:text="@string/toc_s" />
 
-                            <io.legado.app.ui.widget.text.AccentBgTextView
+                            <io.legado.read.ui.widget.text.AccentBgTextView
                                 android:id="@+id/tv_toc_view"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -360,7 +360,7 @@
 
                     </LinearLayout>
 
-                    <io.legado.app.ui.widget.text.ScrollTextView
+                    <io.legado.read.ui.widget.text.ScrollTextView
                         android:id="@+id/tv_intro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -402,7 +402,7 @@
                     android:textColor="@color/primaryText"
                     android:textSize="15sp" />
 
-                <io.legado.app.ui.widget.text.AccentBgTextView
+                <io.legado.read.ui.widget.text.AccentBgTextView
                     android:id="@+id/tv_read"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
